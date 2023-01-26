@@ -1,14 +1,19 @@
 version: '3.0'
 
 services:
-  eahw_ogr:
-    image: eahazardswatch.icpac.net/eahw_ogr
-    container_name: eahw_ogr
+  ogr_api:
+    image: africahazardswatch.org/ogr-api
+    container_name: ogr_api
     build: .
     restart: ${RESTART_POLICY}
     command: start
     environment:
-      - PORT=${PORT}
+      - PORT=3000
       - LOGGER_LEVEL=${LOGGER_LEVEL}
     ports:
-      - ${PORT}:${PORT}
+      - ${PORT}:3000
+
+networks:
+    default:
+      name:  ${AHW_DOCKER_NETWORK}
+      external: true
