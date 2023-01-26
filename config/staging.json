@@ -1,0 +1,12 @@
+{
+  "logger": {
+    "name": "eahw-ogr-api-STAGING",
+    "level": "info",
+    "toFile": false,
+    "dirLogFile": null
+  },
+  "service": {
+    "uri": "",
+    "port": null
+  }
+}

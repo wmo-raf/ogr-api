@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  eahw_ogr:
+    image: eahazardswatch.icpac.net/eahw_ogr
+    container_name: eahw_ogr
+    build: .
+    restart: ${RESTART_POLICY}
+    command: start
+    environment:
+      - PORT=${PORT}
+      - LOGGER_LEVEL=${LOGGER_LEVEL}
+    ports:
+      - ${PORT}:${PORT}
