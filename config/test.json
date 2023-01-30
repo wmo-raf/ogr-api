@@ -1,6 +1,6 @@
 {
   "logger": {
-    "name": "eahw-ogr-api-TEST",
+    "name": "ogr-api-TEST",
     "level": "debug",
     "toFile": false,
     "dirLogFile": null

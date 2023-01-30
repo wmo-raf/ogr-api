@@ -1,7 +1,7 @@
 {
-  "name": "eahw-ogr",
+  "name": "ogr-api",
   "version": "1.1.0",
-  "description": "East Africa Hazards watch - OGR API",
+  "description": "OGR API",
   "main": "app/index.js",
   "scripts": {
     "test-e2e": "NODE_PATH=app/src grunt --gruntfile app/Gruntfile.js e2eTest",
@@ -12,21 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/icpac-igad/eahw-ogr.git"
+    "url": "git+https://github.com/wmo-raf/ogr-api.git"
   },
   "author": {
-    "name": "ICPAC",
-    "email": "developer@icpac.net",
-    "url": "https://icpac.net/"
+    "name": "Erick Otenyo",
+    "email": "otenyo.erick@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/icpac-igad/eahw-ogr/issues"
+    "url": "https://github.com/wmo-raf/ogr-api/issues"
   },
-  "homepage": "https://github.com/icpac-igad/eahw-ogr#readme",
+  "homepage": "https://github.com/wmo-raf/ogr-api#readme",
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1",
     "config": "^3.3.1",
     "jsonapi-serializer": "2.1.1",
     "koa": "^2.11.0",

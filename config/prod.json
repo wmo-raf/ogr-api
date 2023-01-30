@@ -1,6 +1,6 @@
 {
   "logger": {
-    "name": "eahw-ogr-api",
+    "name": "ogr-api",
     "level": "warn",
     "toFile": false,
     "dirLogFile": null

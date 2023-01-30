@@ -1,6 +1,6 @@
 {
   "logger": {
-    "name": "eahw-ogr-api-STAGING",
+    "name": "ogr-api-staging",
     "level": "info",
     "toFile": false,
     "dirLogFile": null

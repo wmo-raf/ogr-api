@@ -1,19 +1,16 @@
-FROM node:12-alpine
+FROM node:12-alpine as node
+FROM osgeo/gdal:alpine-small-latest
 
-ENV NAME eahw-ogr-api
+ENV NAME ahw-ogr-api
 ENV USER microservice
 
-# dependecies
-RUN apk update && apk upgrade && \
-    apk add --no-cache --update bash alpine-sdk
+RUN apk update && apk add bash
 
-# install gdal
-RUN apk add \
-  --no-cache \
-  --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
-  --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
-  gdal-dev \
-  gdal-tools
+COPY --from=node /opt /opt
+COPY --from=node /usr/local/share /usr/local/share
+COPY --from=node /usr/local/lib /usr/local/lib
+COPY --from=node /usr/local/include/node /usr/local/include/node
+COPY --from=node /usr/local/bin /usr/local/bin
 
 RUN addgroup $USER && adduser -s /bin/bash -D -G $USER $USER
 

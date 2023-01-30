@@ -23,7 +23,7 @@ Execution using Docker requires:
 Start by cloning the repository from github to your execution environment
 
 ```
-git clone https://github.com/icpac-igad/eahw-ogr.git && cd eahw-ogr
+git clone https://github.com/wmo-raf/ogr-api.git && cd ogr-api
 ```
 
 After that, follow one of the instructions below:

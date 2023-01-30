@@ -1,14 +1,14 @@
 {
   "logger": {
-    "name": "eahw-ogr-api-DEV",
+    "name": "ogr-api",
     "level": "debug",
     "toFile": false,
     "dirLogFile": null
   },
   "service": {
-    "id": "eahw-ogr-api_1.0.0",
-    "name": "EAHW OGR API",
-    "uri": "http://192.168.99.100:3200",
+    "id": "ogr-api",
+    "name": "OGR API",
+    "uri": "",
     "port": 3200
   }
 }
